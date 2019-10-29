@@ -1,22 +1,25 @@
-La cuenca del Rio Apulo y la Cuenca del Rio Calandaima son las que han presentado las mayores temperaturas en la primavera.
+LA máquina del Tiempo.
 
 
-         A partir de la extracción de los datos de Datos abiertos.gov, se generó un analisis y exploración con el fin de extraer los insight más importantes entre ellos se identificó que el valor de la temperatura es una de las cosas más importantes de identificar debido al cambio climático que esta evolucionando. 
-         De acuerdo a diferentes análsis generados fue posible evidenciar que La cuenca del Rio Apulo y la Cuenca del Rio Calandaima presentaron las mayores temperaturas en la primavera, y esto permite evidenciar que dada su ubicación poseen una alta temperatura la cual ha evolucionado, lo cual es afectado por medio del medio ambiente, los factores principales que se desean visualizar con la siguientes visualizaciones son los siguientes:
+    Este desarrollo fue generado para identificar cuales son las películas más representativas a travez del tiempo, por medio de grafo Las actividades principales son:
 
-         T1. Resumir las temperaturas mas altas de las diferentes cuencas por medio de un analisis temporal (Summarise - Extremes)
-         T2. Localizar la similitud en cada una de las cuencas para el mes seleccionado. (Locate - similarity)
-         T3. Identificar las diferentes tendencias para los valores en los diferentes meses del año(Identify - Trends)
+         T1.Identificar las relaciones principales en las peliculas con respecto a las correlaciones que pueden presentarse.(Identify - correlations)
+         T2. Explorarar las diferentes distribuciones a traves de los años.(Explore-Distibutions)
+         T3. Disfrutar las Diferentes Topologías que pueden presentarse a partir de la interacción de un usuario.(Enjoy - Topólogies)
 
 	
 Tecnologias utilizadas 
 Tableau 
-D3@5 Desarrollo realizado https://observablehq.com/@carolinapardofuquen/el-espinal-el-mejor-lugar-para-vivir/2
+D3@5 
 HTML5
 CSS
 Boostrap
 JS
 
+
+Dataset Extraido a partir del manejo de datos de Movie Lens
+
+El dataset de trabajo es una recopilación de un conjunto de datos de calificaciones de peliculas del sitio Web de MovieLens ( http://movielens.org ), el cual se ha puesto a disposición una recopilación de datos generados a través del tiempo.
 
 
 

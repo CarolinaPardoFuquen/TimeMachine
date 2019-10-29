@@ -2,6 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <style>
+    #D3Plus_RingNetwork {
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css">
+<link rel="stylesheet" href="https://dexjs.net/js/dex-jquery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
+<link rel="stylesheet" href="https://dexjs.net/js/dex-bootstrap.css">
+<link rel="stylesheet" href="https://dexjs.net/js/dex.css">
+
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://dexjs.net/js/dex-jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://dexjs.net/js/dex-bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://dexjs.net/js/dex-libs.js"></script>
+<script src="https://dexjs.net/js/dex.js"></script><script>d3 = dex.charts.d3.d3v3;</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.8/d3plus.min.js"></script>
+
+<!-- load D3js -->
+<script src="//d3plus.org/js/d3.js"></script>
   <title>CPF</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -256,11 +286,11 @@
               <figure>
                 <img src="https://i.imgur.com/0vQhAKD.png" class="img-fluid" alt="">
                 <a href="https://i.imgur.com/0vQhAKD.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#t4Tableau" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="https://carolinapardofuquen.github.io/TemperaturasCuencas/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#t4Tableau">Temperatura de las Cuencas</a></h4>
+                <h4><a href="https://carolinapardofuquen.github.io/TemperaturasCuencas/">Temperatura de las Cuencas</a></h4>
                 <p>Tableau</p>
               </div>
             </div>
@@ -322,39 +352,537 @@
      <!--==========================
       Clients Section
     ============================-->
-   <section id="t4Tableau" class="wow fadeInUp">
+   <section id="t5D3" class="wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
-          <h3>La cuenca del Rio Apulo y la Cuenca del Rio Calandaima son las que han presentado las mayores temperaturas en la primavera.</h3>
-          <h7>A partir de la extracción de los datos de Datos abiertos.gov, se generó un analisis y exploración con el fin de extraer los insight más importantes entre ellos se identificó que el valor de la temperatura es una de las cosas más importantes de identificar debido al cambio climático que esta evolucionando. </h7>
+          <h3>LA máquina del Tiempo.</h3>
+          <h4>Nuestra máquina del tiempo te permitirá conocer la mejores películas desarrolladas a trvés del tiempo, sin duda el mejor entretenimiento para tí</h4>
 
-        <h7>De acuerdo a diferentes análsis generados fue posible evidenciar que La cuenca del Rio Apulo y la Cuenca del Rio Calandaima presentaron las mayores temperaturas en la primavera, y esto permite evidenciar que dada su ubicación poseen una alta temperatura la cual ha evolucionado, lo cual es afectado por medio del medio ambiente, los factores principales que se desean visualizar con la siguientes visualizaciones son los siguientes:
+        <h4>Los factores principales que se deseamos que visualices son los siguientes:
 <ul>
-          <li>T1. Resumir las temperaturas mas altas de las diferentes cuencas por medio de un analisis temporal (Summarise - Extremes)</li>
-          <li>T2. Localizar la similitud en cada una de las cuencas para el mes seleccionado. (Locate - similarity)</li>          
-          <li>T3. Disfrutar los diferentes patrones generados a partir de las tendencias para los valores en los meses del año(Enjoy - Trends)</li>
+
+          <li> Deseamos que conozcas cuales son las relaciones etre las películas, estos análisis fueron extraidos a partir de la base de datos de movie lends y tienen como objetivo principal identificar cuales son las pelícuals más populares a travez de el tiempo por tal razón extrajimos las mejores películas para cada año deacuerdo a rating generado por diferentes usuarios. <br><br>T1.Identificar las relaciones principales en las peliculas para un anio con respecto a las correlaciones que pueden presentarse.(Identify - correlations)</li>
+          <li>Con el fin de que conozcas más sobre las tendencias mundiales integramos la catégoría de cada pelicula con el fin de que puedas explorar las diferentes distribuciones que pueden ser genradas por medio del tipo de película de tu interés<br> <br> T2. Explorarar las diferentes distribuciones a traves de los años.(Explore-Distibutions)</li>          
+          <li>  <br> <br>T3. Disfrutar las Diferentes Topologías que pueden presentarse a partir de la interacción de un usuario.(Enjoy - Topólogies)</li>
           <br>
-        </ul>
-        <h7>Para que puedas interactuar con el siguiente modismo Selecciona una Cuenca ubicada al lado Izquierdo y veras la magia :)</h7>
+        </ul></h4>
+        <h4>Para que puedas interactuar con el siguiente modismo Selecciona unn nodo ubicada en el grafo o un elemento de la lista que se presenta al lado derecho  y veras la magia :)</h4>
         </header>
-<div class='tableauPlaceholder' id='viz1571185101553' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temperaturas2&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Temperaturas2&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temperaturas2&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1571185101553');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        
+      </div>
+    </section>
+    <section>
+      <div class="container">
+          
+          <div id="D3Plus_RingNetwork"></div>
+<script>
+  var csv = new dex.csv({
+    'header': ["Pelicula", "Genero", "Año", "Rating"],
+    'data': [
+     ["Business Man ","Action","2012","4,1"],
+      ["Venus", "Alexander", "louvre", "130ac"],
+["Yasmine ","Action","2014","4,4"],
+["Buffalo Girls ","Action","2012","4,4"],
+["Dreadnaught ","Action","1981","4,4"],
+["Fists of Iron ","Action","1995","4,5"],
+["Spin Kick ","Action","2004","4,5"],
+["Final Impact ","Action","1992","4,7"],
+["Drunken Master 3 ","Action","1994","4,9"],
+["White Tiger ","Action","1996","5"],
+["The Tattoo Connection ","Action","1978","5"],
+["The Jade Fox ","Action","1979","5"],
+["Bloodfist 2050 ","Action","2005","5"],
+["Day of the Panther ","Action","1988","5"],
+["FB: Fighting Beat ","Action","2007","5"],
+["To Be the Best ","Action","1993","5"],
+["Heroes Shed No Tears ","Action","1986","5"],
+["Dragon Lee Vs, The 5 Brothers ","Action","1978","5"],
+["Enter the Game of Death ","Action","1978","5"],
+["Operation Rogue ","Action","2014","5"],
+["Gamera the Brave ","Action|Sci-Fi","2006","5"],
+["Belle and Sebastien ","Adventure","2013","4"],
+["African Treasure ","Adventure","1952","4,2"],
+["Tarzan's Greatest Adventure ","Adventure","1959","4,2"],
+["The Black Shield Of Falworth ","Adventure","1954","4,4"],
+["She Gods of Shark Reef ","Adventure","1958","4,5"],
+["Goliath and the Sins of Babylon ","Adventure","1963","5"],
+["Lie Detector ","Comedy","2011","4"],
+["Emo Philips Live ","Comedy","1987","4"],
+["Bill Burr: Why Do I Do This? ","Comedy","2008","4"],
+["George Carlin: Life Is Worth Losing ","Comedy","2005","4"],
+["George Carlin: Back in Town ","Comedy","1996","4"],
+["Where Angels Go; Trouble Follows ","Comedy","1968","4"],
+["Old Fashioned Way; The ","Comedy","1934","4"],
+["George Carlin: Jammin' in New York ","Comedy","1992","4"],
+["Pablo Francisco: Bits and Pieces ","Comedy","2004","4"],
+["The Tree; the Mayor and the Mediatheque ","Comedy","1993","4"],
+["Ã–dipussi ","Comedy","1988","4"],
+["Dhamaal ","Comedy","2007","4"],
+["Jimmy Carr: Stand Up ","Comedy","2005","4"],
+["Hannibal Buress: Animal Furnace ","Comedy","2012","4"],
+["An Interesting Story ","Comedy","1904","4"],
+["Brancaleone alle crociate ","Comedy","1970","4,1"],
+["Gourmet Club ","Comedy","2004","4,1"],
+["Lisa Lampanelli: Dirty Girl ","Comedy","2007","4,1"],
+["Larry David: Curb Your Enthusiasm ","Comedy","1999","4,1"],
+["A Song of Lisbon ","Comedy","1933","4,1"],
+["Organize isler ","Comedy","2005","4,1"],
+["Plot Against Harry; The ","Comedy","1989","4,1"],
+["Sebastian Maniscalco: What's Wrong with People? ","Comedy","2012","4,1"],
+["Christian Finnegan: The Fun Part ","Comedy","2014","4,1"],
+["The Marquis ","Comedy","2011","4,1"],
+["What About Dick? ","Comedy","2012","4,1"],
+["Cari fottutissimi amici ","Comedy","1994","4,1"],
+["Cabbages and Kings ","Comedy","1978","4,1"],
+["Thou Shalt Laugh ","Comedy","2006","4,1"],
+["Nikki Glaser: Perfect ","Comedy","2016","4,1"],
+["Doug Stanhope: No Place Like Home ","Comedy","2016","4,1"],
+["Ryan Hamilton: Happy Face ","Comedy","2017","4,1"],
+["Les barons ","Comedy","2009","4,1"],
+["Giovannona Long-Thigh ","Comedy","1973","4,2"],
+["Do Detectives Think? ","Comedy","1927","4,2"],
+["Paris Follies ","Comedy","2014","4,2"],
+["A Cookie Cutter Christmas ","Comedy","2014","4,2"],
+["A Taxing Woman's Return ","Comedy","1988","4,2"],
+["Forgive Me ","Comedy","2006","4,2"],
+["Toto; Peppino; and the Hussy ","Comedy","1956","4,2"],
+["Twisted ","Comedy","2013","4,2"],
+["Dave Attell: Hey; Your Mouth's Not Pregnant! ","Comedy","2006","4,2"],
+["The Standoff ","Comedy","2016","4,2"],
+["Something Like It ","Comedy","1981","4,2"],
+["Kyle Kinane: I Liked His Old Stuff Better ","Comedy","2015","4,2"],
+["Jon Stewart: Unleavened ","Comedy","1996","4,2"],
+["Stewart Lee: Stand-Up Comedian ","Comedy","2005","4,2"],
+["Sam Kinison: Breaking the Rules ","Comedy","1987","4,2"],
+["Steve Martin: A Wild and Crazy Guy ","Comedy","1978","4,2"],
+["Lommbock ","Comedy","2017","4,2"],
+["Nothing Left to Do but Cry ","Comedy","1984","4,2"],
+["O PÃ¡tio das Cantigas ","Comedy","1942","4,2"],
+["Living with the Fosters ","Comedy","2002","4,3"],
+["Tale from the Past; A ","Comedy","1987","4,3"],
+["Dave Chappelle: Killin' Them Softly ","Comedy","2000","4,3"],
+["Fraktus ","Comedy","2012","4,3"],
+["The Best of Insomniac with Dave Attell Volume 1 ","Comedy","2003","4,3"],
+["Tora-san's Love Call ","Comedy","1971","4,3"],
+["Parasites; Les ","Comedy","1999","4,3"],
+["Richard Jeni: A Big Steaming Pile of Me ","Comedy","2005","4,3"],
+["Flea in Her Ear; A ","Comedy","1968","4,4"],
+["Dans la peau d'une grande ","Comedy","2011","4,4"],
+["Born in Absurdistan ","Comedy","1999","4,4"],
+["Love at First Hiccough ","Comedy","1999","4,4"],
+["Csinibaba ","Comedy","1997","4,4"],
+["Questi fantasmi ","Comedy","1962","4,4"],
+["The Angrez ","Comedy","2006","4,4"],
+["Naram Garam ","Comedy","1981","4,4"],
+["99 ","Comedy","2009","4,4"],
+["The Kingdom of Diamonds ","Comedy","1980","4,4"],
+["Autumn ","Comedy","1990","4,4"],
+["Half Right Half Left - Two Players Without the Ball ","Comedy","1985","4,5"],
+["The Overtaxed ","Comedy","1959","4,5"],
+["Poor Millionaires ","Comedy","1959","4,5"],
+["Pillow to Post ","Comedy","1945","4,5"],
+["TotÃ²truffa '62 ","Comedy","1961","4,5"],
+["The House in Montevideo ","Comedy","1951","4,5"],
+["The Remarkable Mr, Pennypacker ","Comedy","1959","4,5"],
+["Jamie Foxx: I Might Need Security ","Comedy","2002","4,5"],
+["Godfrey: Black By Accident ","Comedy","2011","4,5"],
+["Say Goodnight ","Comedy","2008","4,5"],
+["The Second Annual 'On Cinema' Oscar Special ","Comedy","2014","4,5"],
+["The Third Annual 'On Cinema' Oscar Special ","Comedy","2015","4,5"],
+["Fantastipo ","Comedy","2005","4,5"],
+["Kyle Kinane: Whiskey Icarus ","Comedy","2012","4,5"],
+["00 Schneider - Im Wendekreis der Eidechse ","Comedy","2013","4,5"],
+["AÃ±o Mariano ","Comedy","2000","4,5"],
+["Greg Giraldo: Midlife Vices ","Comedy","2009","4,5"],
+["The Amorous Prawn ","Comedy","1962","4,5"],
+["The False Secrets ","Comedy","2017","4,5"],
+["True Identity ","Comedy","1991","4,5"],
+["Slam ","Comedy","2016","4,5"],
+["The End of Old Times ","Comedy","1990","4,5"],
+["American Burger ","Comedy","2014","4,5"],
+["Je hais les enfants! ","Comedy","2003","4,5"],
+["Incorrigible Liar ","Comedy","1973","4,5"],
+["Afrika aneb ÄŒeÅ¡i mezi lidoÅ¾ravci ","Comedy","2002","4,5"],
+["Hospoda Na mÃ½tince ","Comedy","1997","4,5"],
+["The Secret Policeman's Ball ","Comedy","1979","4,5"],
+["Mister Roberts ","Comedy","1984","4,5"],
+["The Magnificent Scoundrels ","Comedy","1991","4,5"],
+["Cherry Pop ","Comedy","2017","4,5"],
+["The Very Late Afternoon of a Faun ","Comedy","1983","4,5"],
+["Lisa Lampanelli: Take It Like a Man ","Comedy","2005","4,5"],
+["Foster Brothers; The  ","Comedy","1976","4,5"],
+["Bill Maher: I'm Swiss ","Comedy","2005","4,6"],
+["Doug Stanhope: Deadbeat Hero ","Comedy","2004","4,7"],
+["Dangerous for Your Life! ","Comedy","1985","4,7"],
+["Diplomatic Immunity ","Comedy","2009 ","4,8"],
+["Inquire Within ","Comedy","2012","4,8"],
+["Asphalt Playground ","Comedy","2012","4,9"],
+["A Kind of America 2 ","Comedy","2008","4,9"],
+["The Two Firefighters ","Comedy","1968","4,9"],
+["Men Don't Cry ","Comedy","1968","4,9"],
+["Jailbait Babysitter ","Comedy","1977","4,9"],
+["The Marriage of Figaro ","Comedy","1975","4,9"],
+["Torno a vivere da solo ","Comedy","2008","4,9"],
+["Uomo e galantuomo ","Comedy","1975","4,9"],
+["The Hardy Bucks Movie ","Comedy","2013","4,9"],
+["Hollywood High ","Comedy","1976","4,9"],
+["The Thorn ","Comedy","1971","4,9"],
+["Neue Vahr SÃ¼d ","Comedy","2010","4,9"],
+["Boys Will Be Boys ","Comedy","1935","4,9"],
+["I Love Hong Kong ","Comedy","2011","4,9"],
+["I Love Hong Kong 2012 ","Comedy","2012","4,9"],
+["40 Carats ","Comedy","1973","5"],
+["The Mother Of Invention ","Comedy","2010","5"],
+["Faintheart ","Comedy","2008","5"],
+["Sneeuwwitje en de zeven kleine mensen ","Comedy","2015","5"],
+["ÐšÐ°Ñ€ÑƒÑÐµÐ»ÑŒ ","Comedy","1970","5"],
+["Alonzo Bodden: Historically Incorrect ","Comedy","2016","5"],
+["Josh Blue: Delete ","Comedy","2016","5"],
+["Trevor Moore: High In Church ","Comedy","2015","5"],
+["Brian Regan: Live From Radio City Music Hall ","Comedy","2015","5"],
+["Ninja Bachelor Party ","Comedy","1991","5"],
+["Katt Williams: It's Pimpin Pimpin ","Comedy","2008","5"],
+["L'annÃ©e sainte ","Comedy","1976","5"],
+["Make Way For A Lady ","Comedy","1936","5"],
+["The Box ","Comedy","2004","5"],
+["DÃ©pression et des Potes ","Comedy","2012","5"],
+["Ducoboo ","Comedy","2011","5"],
+["Train Driver's Diary ","Comedy","2016","5"],
+["Dana Gould: I Know It's Wrong ","Comedy","2013","5"],
+["Å vestka ","Comedy","1997","5"],
+["BlanÃ­k ","Comedy","1990","5"],
+["Murder in a Parlor Car Compartment ","Comedy","1997","5"],
+["VyÅ¡etÅ™ovÃ¡nÃ­ ztrÃ¡ty tÅ™Ã­dnÃ­ knihy ","Comedy","1997","5"],
+["ÄŒeskÃ© nebe ","Comedy","2008","5"],
+["Judah Friedlander: America Is the Greatest Country in the United States ","Comedy","2017","5"],
+["Infinity Baby ","Comedy","2017","5"],
+["Mr, Roosevelt ","Comedy","2017","5"],
+["Goldstein ","Comedy","1965","5"],
+["The Adventures of Sherlock Holmes and Dr, Watson: Bloody Signature ","Crime","1979","4"],
+["Sherlock Holmes and Dr, Watson: Acquaintance ","Crime","1979","4"],
+["Tatort: Im Schmerz geboren","Crime","1979","4,1"],
+["The Fall of the Essex Boys ","Crime","2012","4,1"],
+["Death on the Nile ","Crime","2004","4,2"],
+["Drive ","Crime","2002","4,4"],
+["Still Bill ","Documentary","2009","4"],
+["Nursery University ","Documentary","2008","4"],
+["Moana ","Documentary","1926","4"],
+["The Great Invisible ","Documentary","2014","4"],
+["Little Big Men ","Documentary","2010","4"],
+["The Barkley Marathons: The Race That Eats Its Young ","Documentary","2015","4"],
+["Botany of Desire; The ","Documentary","2009","4"],
+["Shouting Fire: Stories from the Edge of Free Speech ","Documentary","2009","4"],
+["The Jinx: The Life and Deaths of Robert Durst ","Documentary","2015","4"],
+["Precision: The Measure of All Things ","Documentary","2013","4"],
+["JosÃ© and Pilar ","Documentary","2010","4"],
+["Frozen Planet ","Documentary","2011","4"],
+["Voices from the List ","Documentary","2004","4"],
+["Vertical Features Remake ","Documentary","1978","4"],
+["Message to Love: The Isle of Wight Festival ","Documentary","1996","4"],
+["Daughter of the Lake ","Documentary","2015","4"],
+["Auschwitz: The Nazis and the 'Final Solution' ","Documentary","2005","4"],
+["My Love; Don't Cross That River ","Documentary","2014","4"],
+["Elway To Marino ","Documentary","2013","4"],
+["Valley Uprising ","Documentary","2014","4"],
+["Streetwise ","Documentary","1984","4"],
+["Sofia's Last Ambulance","Documentary","2012","4"],
+["Running the Sahara ","Documentary","2009","4"],
+["Map For Saturday; A ","Documentary","2007","4"],
+["O,J,: Made in America ","Documentary","2016","4"],
+["Instrument ","Documentary","2003","4"],
+["Car Bonus  ","Documentary","2001","4"],
+["The Dream Team ","Documentary","2012","4"],
+["Suicide Killers ","Documentary","2006","4,1"],
+["Last Truck: Closing of a GM Plant; The ","Documentary","2009","4,1"],
+["Giuseppe Makes a Movie ","Documentary","2014","4,1"],
+["Mutantes ","Documentary","2009","4,1"],
+["Hank: 5 Years from the Brink ","Documentary","2013","4,1"],
+["Yalom's Cure ","Documentary","2014","4,1"],
+["Tomorrow ","Documentary","2015","4,1"],
+["Louis Theroux: Extreme Love - Autism ","Documentary","2012","4,1"],
+["Bruce Lee: The Legend ","Documentary","1984","4,1"],
+["Life ","Documentary","2009","4,1"],
+["Last Bolshevic The Tombeau d'Alexandre ","Documentary","1993","4,1"],
+["Louis Theroux: The Ultra Zionists ","Documentary","2011","4,1"],
+["Tie Xi Qu: West of the Tracks ","Documentary","2003","4,1"],
+["Koumiko Mystery; The  ","Documentary","1967","4,1"],
+["We Come as Friends ","Documentary","2014","4,1"],
+["Charles Darwin and the Tree of Life ","Documentary","2009","4,1"],
+["Harry & Snowman ","Documentary","2015","4,1"],
+["The 24 Hour War ","Documentary","2016","4,1"],
+["I Called Him Morgan ","Documentary","2016","4,1"],
+["Long Way Down ","Documentary","2010","4,1"],
+["Spine Tingler!  The William Castle Story ","Documentary","2007","4,1"],
+["The Buddha ","Documentary","2010","4,1"],
+["Racing Dreams ","Documentary","2009","4,1"],
+["The Possibilities Are Endless ","Documentary","2014","4,1"],
+["Year Zero: The Silent Death of Cambodia ","Documentary","1979","4,1"],
+["Codes of Gender; The ","Documentary","2010","4,1"],
+["Freeheld ","Documentary","2007","4,1"],
+["The Queen ","Documentary","1968","4,1"],
+["Celestial Subway Lines/Salvaging Noise ","Documentary","2005","4,1"],
+["Everything's Cool ","Documentary","2007","4,1"],
+["Hitler - Never Heard of Him ","Documentary","1963","4,1"],
+["Human ","Documentary","2015","4,1"],
+["Public Housing ","Documentary","1997","4,1"],
+["Adjust Your Tracking ","Documentary","2013","4,1"],
+["Can We Take a Joke? ","Documentary","2015","4,1"],
+["Ice Guardians ","Documentary","2016","4,1"],
+["Henri Cartier-Bresson: The Impassioned Eye ","Documentary","2003","4,1"],
+["Shake! Otis at Monterey ","Documentary","1987","4,1"],
+["Pink Floyd: Live at Pompeii ","Documentary","1972","4,1"],
+["Larry Flynt: The Right to Be Left Alone ","Documentary","2007","4,1"],
+["Sacco and Vanzetti ","Documentary","2006","4,1"],
+["Tickling Giants ","Documentary","2017","4,1"],
+["Shadow World ","Documentary","2016","4,1"],
+["Dina ","Documentary","2017","4,1"],
+["Ashes and Snow ","Documentary","2005","4,1"],
+["On the Bowery ","Documentary","1957","4,1"],
+["Park Avenue: Money; Power and the American Dream ","Documentary","2012","4,1"],
+["Juvenile Court ","Documentary","1973","4,1"],
+["Welfare ","Documentary","1975","4,1"],
+["The Blue Planet ","Documentary","2001","4,1"],
+["No One Dies in Lily Dale ","Documentary","2010","4,2"],
+["Killing Kasztner ","Documentary","2008","4,2"],
+["Film ist, ","Documentary","2000","4,2"],
+["I Am My Films - A Portrait of Werner Herzog ","Documentary","1979","4,2"],
+["Bustin' Down the Door ","Documentary","2009","4,2"],
+["Snowball Effect: The Story of 'Clerks' ","Documentary","2004","4,2"],
+["New Rulers of the World; The ","Documentary","2001","4,2"],
+["IMAX - Roving Mars ","Documentary","2006","4,2"],
+["The Natural Love ","Documentary","1996","4,2"],
+["Kissinger ","Documentary","2011","4,2"],
+["TimeScapes ","Documentary","2012","4,2"],
+["Soundtrack for a Revolution ","Documentary","2009","4,2"],
+["The Choice Is Ours ","Documentary","2015","4,2"],
+["Old Fashioned: The Story of the Wisconsin Supper Club ","Documentary","2015","4,2"],
+["She's Beautiful When She's Angry ","Documentary","2014","4,2"],
+["Human Planet ","Documentary","2011","4,2"],
+["Long Strange Trip ","Documentary","2017","4,2"],
+["Ruins ","Documentary","2013","4,2"],
+["Salad Days ","Documentary","2015","4,2"],
+["What is This Film Called Love? ","Documentary","2012","4,2"],
+["Il Solengo ","Documentary","2016","4,2"],
+["Evacuate Earth ","Documentary","2012","4,2"],
+["Fish out of Water ","Documentary","2009","4,2"],
+["Thank You for Your Service ","Documentary","2016","4,2"],
+["Flight of the Butterflies ","Documentary","2012","4,2"],
+["Jimi Hendrix: Voodoo Child ","Documentary","2010","4,2"],
+["Boiling Point ","Documentary","2017","4,2"],
+["Life Cycles ","Documentary","2010","4,2"],
+["The Secret Life of Chaos ","Documentary","2010","4,2"],
+["Among the Believers ","Documentary","2015","4,2"],
+["101 Rent Boys ","Documentary","2000","4,2"],
+["Accidental Courtesy: Daryl Davis; Race & America ","Documentary","2016","4,2"],
+["Forever Pure ","Documentary","2016","4,2"],
+["Jago: A Life Underwater ","Documentary","2015","4,2"],
+["I Don't Know Jack ","Documentary","2002","4,2"],
+["Dying to Know: Ram Dass & Timothy Leary ","Documentary","2014","4,2"],
+["Blue Planet II ","Documentary","2017","4,2"],
+["All I Can ","Documentary","2011","4,2"],
+["Fuck Off 2 - Images from Finland ","Documentary","2017","4,2"],
+["Garrison Keillor: The Man on the Radio in the Red Shoes ","Documentary","2009","4,2"],
+["Chico - Artista Brasileiro ","Documentary","2015","4,2"],
+["Anarchism in America ","Documentary","1983","4,2"],
+["Blood Brother ","Documentary","2013","4,2"],
+["Bruce Lee: A Warrior's Journey ","Documentary","2000","4,2"],
+["From the Journals of Jean Seberg ","Documentary","1995","4,3"],
+["Glorious Technicolor ","Documentary","1998","4,3"],
+["Moral Tales; Filmic Issues ","Documentary","2006","4,3"],
+["Jean Renoir: Part One - From La Belle Ã‰poque to World War II ","Documentary","1993","4,3"],
+["Preston Sturges: The Rise and Fall of an American Dreamer ","Documentary","1990","4,3"],
+["Shining Night: A Portrait of Composer Morten Lauridsen ","Documentary","2012","4,3"],
+["Making a Killing: The Untold Story of Psychotropic Drugging ","Documentary","2008","4,3"],
+["Miss You Can Do It ","Documentary","2013","4,3"],
+["Everybody Street ","Documentary","2013","4,3"],
+["Burzynski; the Movie ","Documentary","2010","4,3"],
+["The Art of Organized Noize ","Documentary","2016","4,3"],
+["Classic Albums: The Who - Who's Next ","Documentary","1999","4,3"],
+["Grin Without a Cat; A ","Documentary","1977","4,3"],
+["Pablo Escobar: King of Cocaine ","Documentary","1998","4,3"],
+["Black Sabbath: Paranoid ","Documentary","2010","4,3"],
+["How Videogames Changed the World ","Documentary","2013","4,3"],
+["Ghostland: The View of the Ju'Hoansi ","Documentary","2016","4,3"],
+["David Bowie: The Last Five Years ","Documentary","2017","4,3"],
+["The Private Life of Plants ","Documentary","1995","4,3"],
+["Journey to the Edge of the Universe ","Documentary","2008","4,3"],
+["Heartworn Highways ","Documentary","1976","4,3"],
+["Flight from Death: The Quest for Immortality ","Documentary","2003","4,3"],
+["Choke ","Documentary","1999","4,3"],
+["By the People: The Election of Barack Obama ","Documentary","2009","4,3"],
+["New York: A Documentary Film ","Documentary","1999","4,3"],
+["4,1 Miles ","Documentary","2016","4,3"],
+["Ice Age Columbus: Who Were the First Americans? ","Documentary","2005","4,39999999999999"],
+["Such Hawks Such Hounds ","Documentary","2008","4,39999999999999"],
+["De la servitude moderne ","Documentary","2009","4,39999999999999"],
+["Snowriders ","Documentary","1996","4,4"],
+["Picture Me: A Model's Diary ","Documentary","2009","4,4"],
+["Dreamworlds II: Desire; Sex; Power in Music Video ","Documentary","1997","4,4"],
+["Advertising and the End of the World ","Documentary","1998","4,4"],
+["A Night at the Movies: The Suspenseful World of Thrillers ","Documentary","2009","4,4"],
+["The Fruit Hunters ","Documentary","2012","4,4"],
+["Neshoba ","Documentary","2010","4,4"],
+["El vals de los inÃºtiles ","Documentary","2014","4,4"],
+["Filmage: The Story of Descendents/All ","Documentary","2014","4,4"],
+["Journey to Planet X ","Documentary","2012","4,4"],
+["The True Meaning of Pictures: Shelby Lee Adams' Appalachia ","Documentary","2002","4,4"],
+["Deep Blues ","Documentary","1992","4,4"],
+["Highway of Tears ","Documentary","2014","4,4"],
+["100 Yen: The Japanese Arcade Experience ","Documentary","2012","4,4"],
+["Odyssey in Rome ","Documentary","2005","4,4"],
+["Brian Eno: Another Green World ","Documentary","2010","4,4"],
+["Erotic Ghost Story ","Drama","1987","4,2"],
+["Don Quixote ","Drama","1957","4,2"],
+["Y,M,I, - Yeh Mera India ","Drama","2009","4,2"],
+["Mammal ","Drama","2016","4,2"],
+["Strawberry Summer ","Drama","2012","4,2"],
+["My Younger Brother ","Drama","1962","4,2"],
+["A Performance of Macbeth ","Drama","1979","4,2"],
+["Tess of the D'Urbervilles ","Drama","2008","4,2"],
+["A Night for Dying Tigers ","Drama","2010","4,2"],
+["Mary Is Happy; Mary Is Happy ","Drama","2013","4,2"],
+["Ciao Professore!  ","Drama","1992","4,2"],
+["Fiancee; The Parineeta ","Drama","1953","4,2"],
+["Voyna i mir IV, - Pierre Bezukhov ","Drama","2014","4,2"],
+["Two Of Us ","Drama","2000","4,2"],
+["A Thousand Men and a Baby ","Drama","1997","4,2"],
+["The Submarine Kid ","Drama","2016","4,2"],
+["1, Mai ","Drama","2008","4,2"],
+["Bockerer ","Drama","1981","4,2"],
+["Max Rose ","Drama","2016","4,2"],
+["Unutursam FÄ±sÄ±lda ","Drama","2014","4,2"],
+["Bangkok Hilton ","Drama","1989","4,2"],
+["The Portuguese Nun ","Drama","2009","4,2"],
+["Radiator ","Drama","2014","4,2"],
+["Shwaas ","Drama","2004","4,2"],
+["This Is Our Land ","Drama","2017","4,2"],
+["Wetlands ","Drama","2011","4,2"],
+["Close ","Drama","2004","4,3"],
+["alaskaLand ","Drama","2013","4,3"],
+["Babai ","Drama","2015","4,3"],
+["Giordano Bruno ","Drama","1973","4,3"],
+["Ode to My Father ","Drama","2014","4,3"],
+["Hope ","Drama","2013","4,3"],
+["Al otro lado ","Drama","2004","4,3"],
+["Iron Man ","Drama","1951","4,3"],
+["Secret Superstar ","Drama","2017","4,3"],
+["I Want to Be a Soldier ","Drama","2011","4,3"],
+["Djomeh ","Drama","2000","4,4"],
+["588 Rue Paradis Mother ","Drama","1992","4,4"],
+["Francis of Assisi ","Drama","1961","4,4"],
+["Hysteria: The Def Leppard Story ","Drama","2001","4,4"],
+["Garage Sale Mystery ","Drama","2013","4,4"],
+["Jealousy ","Drama","1953","4,4"],
+["Heaven Is a Playground ","Drama","1991","4,4"],
+["Drevo ","Drama","2014","4,4"],
+["Guter Junge ","Drama","2008","4,4"],
+["A Gift of Miracles ","Drama","2015","4,4"],
+["A Town Has Turned to Dust ","Drama","1958","4,4"],
+["Blow for Blow ","Drama","1972","4,4"],
+["Benim DÃ¼nyam ","Drama","2013","4,4"],
+["Bi; Don't Be Afraid ","Drama","2010","4,4"],
+["Gravity's Clowns ","Drama","2009","4,4"],
+["The Battle Of The Villa Fiorita ","Drama","1965","4,4"],
+["Hierankl ","Drama","2003","4,4"],
+["The Bengali Night ","Drama","1988","4,4"],
+["Forsyte Saga; The ","Drama","1967","4,4"],
+["Little Forest: Winter/Spring ","Drama","2015","4,4"],
+["The Guide ","Drama","2014","4,4"],
+["Avetik ","Drama","1992","4,4"],
+["Mrs, 'Arris Goes to Paris ","Drama","1992","4,4"],
+["Prora ","Drama","2012","4,4"],
+["Two Friends ","Drama","1986","4,5"],
+["AmericanEast ","Drama","2008","4,5"],
+["Home Sweet Home ","Drama","2001","4,5"],
+["Heat Wave ","Drama","1990","4,5"],
+["Bubu ","Drama","1971","4,5"],
+["Horses of God ","Drama","2013","4,5"],
+["Second Chances ","Drama","2013","4,5"],
+["Love Finds You in Charm ","Drama","2015","4,5"],
+["Titus Andronicus ","Drama","1985","4,5"],
+["Razend ","Drama","2011","4,5"],
+["The Constitution ","Drama","2016","4,5"],
+["You Will Know What to Do With Me ","Drama","2016","4,5"],
+["7 Days of Himawari & Her Puppies ","Drama","2013","4,5"],
+["Invention of Trust ","Drama","2014","4,5"],
+["The Castle ","Drama","1994","4,5"],
+["People of the Mountains ","Drama","1942","4,5"],
+["Dark Streets ","Drama","2008","4,5"],
+["Pioneer Heroes ","Drama","2015","4,5"],
+["Lettre d'une inconnue ","Drama","2001","4,5"],
+["Neither Wolf Nor Dog ","Drama","2014","4,5"],
+["Der groÃŸe Bagarozy ","Drama","1999","4,5"],
+["Bliss ","Drama","2012","4,5"],
+["Rage ","Drama","2016","4,5"],
+["Escape from Polygamy ","Drama","2013","4,5"],
+["Cartesius ","Drama","1974","4,5"],
+["The Movie about Alekseev ","Drama","2014","4,5"],
+["Midnight Masquerade ","Romance","2014","4,4"],
+["Love on the Air ","Romance","2015","4,4"],
+["Cup of Love ","Romance","2016","4,5"],
+["The Horse Dancer ","Romance","2017","4,5"],
+["The Reckoning ","Romance","2015","4,5"],
+["Summer in the Vineyard ","Romance","2017","4,5"],
+["Can't Buy My Love ","Romance","2017","4,7"],
+["Pursuit of Unhappiness ","Romance","2012","4,9"],
+["Waltz Across Texas ","Romance","1982","5"],
+["A Dash of Love ","Romance","2017","5"],
+["Arrival ","Sci-Fi","2016","4"],
+["Blade Runner 2049 ","Sci-Fi","2017","4"],
+["Legend of the Galactic Heroes: Overture to a New War ","Sci-Fi","1993","4,5"],
+["Genghis Khan Conquers the Moon ","Sci-Fi","2015","4,5"],
+["Race to Mars ","Sci-Fi","2007","5"],
+["The Invisible Guest ","Thriller","2016","4"],
+["Spotlight ","Thriller","2015","4"],
+["The Good Lie ","Thriller","2013","4,1"],
+["Housekeeping ","Thriller","2015","4,2"],
+["Stranger in the House ","Thriller","1997","4,3"],
+["Rumors of Wars ","Thriller","2014","4,4"],
+["The Fire Next Time ","Thriller","1993","4,4"],
+["Nature Unleashed: Volcano ","Thriller","2005","4,5"],
+["Hate Story ","Thriller","2012","4,6"],
+["Love; Cheat & Steal ","Thriller","1993","4,9"],
+["The Perfect Nanny ","Thriller","2000","4,9"],
+["The Rival ","Thriller","2006","4,9"],
+["Stranger in My House ","Thriller","1999","4,9"],
+["The Woman In White ","Thriller","1998","5"],
+["Double Daddy ","Thriller","2015","5"],
+["Mercy ","Thriller","2012","5"],
+["Tumbledown ","War","1988","4"],
+["Vietnam in HD ","War","2011","4"],
+["Hitler ","War","1962","4,9"],
+["Liberation: Direction of the Main Blow ","War","1971","5"],
+["Liberation: The Last Assault ","War","1972","5"],
+["Liberation: The Break Through ","War","1970","5"],
+    ]
+  });
+  // Configure a chart.
+  var network = dex.charts.d3plus.RingNetwork({
+      'parent': '#D3Plus_RingNetwork',
+      'type': 'rings',
+      'edges': {'arrows': true},
+      'csv': csv
+    }
+  ).render();
+</script>
 
-  <h7>Segunda Visualizacion: La siguiente visualización pretende Disfrutar los diferentes patrones generados a partir de las tendencias para los valores en los meses del año. A partir de la selección de la cuenca.</h7>
+        </div>
 
-        <div class='tableauPlaceholder' id='viz1571193721033' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;en&#47;enjoyTemperature&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='enjoyTemperature&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;en&#47;enjoyTemperature&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1571193721033');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+    </section>
+    <section>
 
           <h3> Carolina Pardo Fuquen</h3>
 
-        <h4>Fuente de datos
-        <a href="https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/TEMPERATURAS-ESTACION-LA-PRIMAVERA/cam6-tydb" target="_blank"> Aqui</a></h4>
+        <h4>Fuente de datos <a href="https://movielens.org/" target="_blank"> Aqui</a></h4>
+
+        <h4> Idea tomada desde <a href="http://d3plus.org/examples/basic/9034389/" target="_blank"> Aqui</a></h4>
+
+
       </div>
+</section>
 
-
-
-    </section><!-- #clients -->
+<!-- #clients -->
 
 
 <!--
